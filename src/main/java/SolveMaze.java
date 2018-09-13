@@ -40,6 +40,7 @@ public class SolveMaze {
                     maze.turnLeft();
                 }
                 maze.move();
+            }
         }
 
         if (maze.isFinished()) {
