@@ -15,8 +15,15 @@ public class SolveMaze {
      *
      * @param unused unused input arguments
      */
+       while (isFinished() == false) {
+        Maze.turnRight();
+        while (Maze.canMove() == false) {
+            Maze.turnLeft();
+        }
+        Maze.move();
 
-    public static void main(final String[] unused) {
+
+        public static void main(final String[] unused) {
         /*
          * Create a new 10 x 10 maze. Feel free to change these values.
          */
